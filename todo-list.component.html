@@ -1,0 +1,5 @@
+<mat-card *ngIf="todo_list.length > 0">
+    <mat-list>
+      <mat-list-item *ngFor="let entry of todo_list; let i = index"> {{ i }}. {{ entry.title }} </mat-list-item>
+    </mat-list>
+  </mat-card>
